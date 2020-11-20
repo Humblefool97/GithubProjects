@@ -18,6 +18,7 @@ dependencies {
 
     implementation dataDependencies.javaxAnnotation
     implementation dataDependencies.javaxInject
+    implementation dataDependencies.rxJava
     implementation dataDependencies.rxKotlin
 
     testImplementation dataTestDependencies.junit
