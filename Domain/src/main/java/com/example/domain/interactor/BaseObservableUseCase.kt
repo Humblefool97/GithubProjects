@@ -11,7 +11,7 @@ abstract class BaseObservableUseCase<T, in Params> constructor(private val postE
 
     private val disposbales = CompositeDisposable()
 
-    protected abstract fun buildUseCaseObservable(params: Params? = null): Observable<T>
+     abstract fun buildUseCaseObservable(params: Params? = null): Observable<T>
 
     open fun execute(singleObserver: DisposableObserver<T>, params: Params? = null) {
         val single = this.buildUseCaseObservable(params)
