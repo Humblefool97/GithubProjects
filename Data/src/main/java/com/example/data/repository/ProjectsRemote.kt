@@ -6,10 +6,4 @@ import io.reactivex.Observable
 
 interface ProjectsRemote {
     fun getProjects(): Observable<List<ProjectEntity>>
-
-    fun getBookmarkedProjects(): Observable<List<ProjectEntity>>
-
-    fun setProjectAsBookmarked(projectId: String): Completable
-
-    fun setProjectAsNotBookmarked(projectId: String): Completable
 }
