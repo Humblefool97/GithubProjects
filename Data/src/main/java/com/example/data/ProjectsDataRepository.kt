@@ -13,7 +13,7 @@ import javax.inject.Inject
 /**
  *  Implements Domain's [ProjectRepository]
  */
-class ProjectsDataRepository @Inject constructor(
+open class ProjectsDataRepository @Inject constructor(
     private val mapper: ProjectMapper,
     private val cache: ProjectsCache,
     private val provider: ProjectDataStoreProvider

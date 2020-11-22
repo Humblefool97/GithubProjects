@@ -39,13 +39,19 @@ android {
 
 dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    implementation project(path: ':Domain')
+
     def mobileUiDependencies = rootProject.ext.mobileUiDependencies
     def mobileUiTestDependencies = rootProject.ext.mobileUiTestDependencies
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-
     implementation project(':Presentation')
-    implementation project(':Domain')
+    implementation project(':Data')
+    implementation project(':Remote')
+    implementation project(':cache')
+
+
 
     implementation mobileUiDependencies.javaxAnnotation
     implementation mobileUiDependencies.javaxInject
