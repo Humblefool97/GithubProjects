@@ -1,5 +1,6 @@
 package com.example.cache.dao
 
+import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
@@ -10,6 +11,7 @@ import com.example.cache.db.QUERY_UPDATE_BOOKMARK_STATUS
 import com.example.cache.model.CachedProjectEntity
 import io.reactivex.Flowable
 
+@Dao
 interface CachedProjectDao {
     @Query(QUERY_PROJECTS)
     @JvmSuppressWildcards
