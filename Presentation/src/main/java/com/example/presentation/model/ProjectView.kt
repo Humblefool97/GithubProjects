@@ -1,4 +1,4 @@
-package com.example.presentation
+package com.example.presentation.model
 
 data class ProjectView(
     val id: String, val name: String, val fullName: String,

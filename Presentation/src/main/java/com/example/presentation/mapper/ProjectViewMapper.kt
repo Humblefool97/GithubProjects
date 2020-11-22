@@ -1,7 +1,7 @@
 package com.example.presentation.mapper
 
 import com.example.domain.model.Project
-import com.example.presentation.ProjectView
+import com.example.presentation.model.ProjectView
 
 class ProjectViewMapper : Mapper<ProjectView, Project> {
     override fun fromMapToView(type: Project): ProjectView {
