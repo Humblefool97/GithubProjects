@@ -1,4 +1,4 @@
-package com.example.githubsample
+package com.example.mobile_ui
 
 import org.junit.Test
 
