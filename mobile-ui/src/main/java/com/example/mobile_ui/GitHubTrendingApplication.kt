@@ -30,4 +30,6 @@ class GitHubTrendingApplication : Application(), HasActivityInjector {
     override fun activityInjector(): AndroidInjector<Activity> {
         return androidInjector
     }
+
+
 }
