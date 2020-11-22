@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mobile-ui</string>
+    <string name="app_name">GithubTrending</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="bookmarked_projects">Bookmarked projects</string>
     <string name="title_bookmarked">Bookmarked</string>

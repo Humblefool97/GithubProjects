@@ -44,6 +44,8 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     implementation project(':Presentation')
+    implementation project(':Domain')
+
     implementation mobileUiDependencies.javaxAnnotation
     implementation mobileUiDependencies.javaxInject
     implementation mobileUiDependencies.rxKotlin
