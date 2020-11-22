@@ -4,11 +4,16 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.cache.dao.CachedProjectDao
+import com.example.cache.dao.ConfigDao
 import com.example.cache.model.CachedProjectEntity
+import com.example.cache.model.Config
 import javax.inject.Inject
 
-@Database(entities = [CachedProjectEntity::class], version = 1)
+@Database(entities = [CachedProjectEntity::class, Config::class], version = 1)
 abstract class AppDatabase @Inject constructor() : RoomDatabase() {
+    abstract fun provideProjectDao(): CachedProjectDao
+    abstract fun provideConfigDao(): ConfigDao
 
     companion object {
         private var INSTANCE: AppDatabase? = null
