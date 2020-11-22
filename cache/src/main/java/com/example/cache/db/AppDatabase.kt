@@ -23,7 +23,7 @@ abstract class AppDatabase @Inject constructor() : RoomDatabase() {
             if (INSTANCE == null) {
                 synchronized(lock) {
                     if (INSTANCE == null) {
-                        INSTANCE == Room.databaseBuilder(
+                        INSTANCE = Room.databaseBuilder(
                             context,
                             AppDatabase::class.java,
                             "AppDb.db"

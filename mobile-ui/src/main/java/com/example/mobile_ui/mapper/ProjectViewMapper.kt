@@ -2,8 +2,9 @@ package com.example.mobile_ui.mapper
 
 import com.example.mobile_ui.model.Project
 import com.example.presentation.model.ProjectView
+import javax.inject.Inject
 
-class ProjectViewMapper : Mapper<ProjectView, Project> {
+class ProjectViewMapper @Inject constructor() : Mapper<ProjectView, Project> {
     override fun mapFromView(presentation: ProjectView): Project {
         return Project(
             presentation.id, presentation.name,

@@ -2,8 +2,9 @@ package com.example.cache.mapper
 
 import com.example.cache.model.CachedProjectEntity
 import com.example.data.model.ProjectEntity
+import javax.inject.Inject
 
-class CachedProjectMapper : CacheMapper<CachedProjectEntity, ProjectEntity> {
+class CachedProjectMapper @Inject constructor() : CacheMapper<CachedProjectEntity, ProjectEntity> {
     override fun mapFromCache(type: CachedProjectEntity): ProjectEntity {
         return ProjectEntity(
             type.id,

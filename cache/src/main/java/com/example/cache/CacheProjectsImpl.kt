@@ -79,7 +79,7 @@ class CacheProjectsImpl @Inject constructor(
 
     override fun isProjectsCacheExpired(): Single<Boolean> {
         val currentTime = System.currentTimeMillis()
-        val timeLimit = 24 * 60 * 1000
+        val timeLimit = 10 * 60 * 1000
         return appDatabase.provideConfigDao().getConfig()
             .single(Config(lastCachedTime = 0))
             .map {
