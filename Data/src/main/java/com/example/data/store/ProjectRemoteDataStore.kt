@@ -17,15 +17,15 @@ class ProjectRemoteDataStore @Inject constructor(private val projectsRemote: Pro
     }
 
     override fun getBookmarkedProjects(): Observable<List<ProjectEntity>> {
-        return projectsRemote.getBookmarkedProjects()
+        throw UnsupportedOperationException("Can't do this remote")
     }
 
     override fun setProjectAsBookmarked(projectId: String): Completable {
-        return projectsRemote.setProjectAsBookmarked(projectId)
+        throw UnsupportedOperationException("Can't do this remote")
     }
 
     override fun setProjectAsNotBookmarked(projectId: String): Completable {
-        return projectsRemote.setProjectAsNotBookmarked(projectId)
+        throw UnsupportedOperationException("Can't do this remote")
     }
 
     override fun saveProjects(projects: List<ProjectEntity>): Completable {
