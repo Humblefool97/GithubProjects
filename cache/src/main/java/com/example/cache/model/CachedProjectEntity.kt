@@ -1,0 +1,19 @@
+package com.example.cache.model
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import com.example.cache.db.TABLE_NAME
+
+
+@Entity(tableName = TABLE_NAME)
+data class CachedProjectEntity(
+    @PrimaryKey
+    var id: String,
+    var name: String,
+    var fullName: String,
+    var starCount: String,
+    var dateCreated: String,
+    var ownerName: String,
+    var ownerAvatar: String,
+    var isBookmarked: Boolean
+)
